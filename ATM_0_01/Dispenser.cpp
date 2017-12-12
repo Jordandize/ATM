@@ -19,9 +19,9 @@ Dispenser::~Dispenser()
 bool * Dispenser::availableNotes() const
 {
 	bool * available = new bool[3];
-	available[0] = _cassette.has100(MIN_100_AMOUNT - 1) ? true : false;
-	available[1] = _cassette.has200(MIN_200_AMOUNT - 1) ? true : false;
-	available[2] = _cassette.has500(MIN_500_AMOUNT - 1) ? true : false;
+	available[0] = _cassette.has100(MIN_100_AMOUNT - 1);
+	available[1] = _cassette.has200(MIN_200_AMOUNT - 1);
+	available[2] = _cassette.has500(MIN_500_AMOUNT - 1);
 	return available;
 }
 
