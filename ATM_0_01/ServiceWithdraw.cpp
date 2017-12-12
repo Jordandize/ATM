@@ -25,6 +25,8 @@ void ServiceWithdraw::printAvailable() const
 	if(!avail[0] && !avail[1] && !avail[2])
 		cout << " none";
 	cout << "." << endl << endl;
+
+	delete [] avail;
 }
 
 void ServiceWithdraw::doService()
